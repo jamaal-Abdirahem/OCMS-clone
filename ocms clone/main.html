@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- css style link -->
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Saira+Stencil+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- favicon link -->
+    <link rel="icon" type="simad-icon" href="/imgs/simad-logo.png" />
+
+    <title>SIMAD University | Online Campus Management System</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="logo">
+          <span class="spn-one">ONLINE</span>
+          <span class="spn-ocm">CMS</span>
+        </div>
+        <div class="menu">
+          <ion-icon name="menu" class="menu-icn"></ion-icon>
+        </div>
+      </header>
+      <nav class="head-nav">
+        <ul class="head-nav-list">
+          <li class="head-nav-list-item">
+            <button class="srch-btn">
+              <ion-icon name="search" class="srch-icon"></ion-icon>
+            </button>
+          </li>
+          <li class="head-nav-list-item">
+            <ion-icon name="mail" class="hd-icons"></ion-icon
+            ><span>Message</span>
+          </li>
+          <li class="head-nav-list-item">
+            <ion-icon name="notifications" class="hd-icons"></ion-icon
+            ><span>Events</span>
+          </li>
+          <li class="head-nav-list-item">
+            <ion-icon name="settings" class="hd-icons"></ion-icon
+            ><span>Settings</span>
+          </li>
+        </ul>
+
+        <div class="user">
+          <div class="user-img">
+            <img src="/imgs/ghazali img.jpg" alt="user-img" />
+            <ion-icon name="chevron-down" class="drop-dwn-icn"></ion-icon>
+          </div>
+          <div class="user-description">
+            <p class="user-name">
+              <ion-icon name="person-outline" class="user-icn"></ion-icon>
+              <span>Mohamed Ahmed Ghazali</span>
+            </p>
+            <p class="user-email">
+              <ion-icon name="mail-outline" class="user-icn"></ion-icon>
+              <span>Mohamedghazali@student.simad.edu.so</span>
+            </p>
+          </div>
+        </div>
+      </nav>
+      <div class="side-nav">
+        <p class="nav-description">MAIN NAVIGATION</p>
+        <ul class="nav-list">
+          <li class="nav-list-item">
+            <ion-icon name="home-outline" class="nav-icn"></ion-icon
+            ><span>Home</span>
+          </li>
+          <li class="nav-list-item">
+            <ion-icon name="people-outline" class="nav-icn"></ion-icon
+            ><span>Account Management</span>
+          </li>
+          <li class="nav-list-item">
+            <ion-icon name="school-outline" class="nav-icn"></ion-icon
+            ><span>Student</span>
+          </li>
+        </ul>
+      </div>
+      <div class="main">
+        <div class="home">
+          <ion-icon name="home" class="home-icn"></ion-icon>
+          <p class="home-title">Home</p>
+        </div>
+        <div class="main-details">
+          <div class="details-upper-links">
+            <ul class="details-list">
+              <li class="details-list-items"><a href="#">Quick Links</a></li>
+              <li class="details-list-items dli-fill">
+                <a href="#">Academics</a>
+              </li>
+              <li class="details-list-items"><a href="#">My Profile</a></li>
+            </ul>
+          </div>
+
+          <div class="semester">
+            <div class="semester-name"><span>Semester</span></div>
+            <select name="semesters" id="semesters-number">
+              <option value="Select one...">Select one...</option>
+              <option value="Semester I">Semester I</option>
+              <option value="Semester II">Semester II</option>
+            </select>
+            <div class="src">
+              <ion-icon name="search" class="src-icon"></ion-icon>
+              <span>Search</span>
+            </div>
+          </div>
+          <div class="semester-courses">
+            <div class="title"><p>semester courses</p></div>
+            <div class="labels">
+              <label for="select">
+                <select name="courses-number" id="courses-number">
+                  <option value="5">5</option>
+                  <option value="10">10</option>
+                  <option value="50">50</option>
+                  <option value="100">100</option>
+                </select>
+                rows per page
+              </label>
+              <label for="search">
+                <input type="text" class="search" placeholder="Search..."
+              /></label>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>
+                    Code
+                    <ion-icon
+                      name="chevron-expand-outline"
+                      class="table-icn"
+                    ></ion-icon>
+                  </th>
+                  <th>
+                    Course
+                    <ion-icon
+                      name="chevron-expand-outline"
+                      class="table-icn"
+                    ></ion-icon>
+                  </th>
+                  <th>
+                    Lecturer
+                    <ion-icon
+                      name="chevron-expand-outline"
+                      class="table-icn"
+                    ></ion-icon>
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td class="special-td">
+                    BCS17-B » Semester II » February2024/June2024
+                  </td>
+                </tr>
+                <tr>
+                  <td>EDU1204</td>
+                  <td>Critical Thinking</td>
+                  <td>Mohamed Yusuf Ahmed</td>
+                </tr>
+
+                <tr>
+                  <td>EDU1201</td>
+                  <td>Somali Studies</td>
+                  <td>Somali Studies</td>
+                </tr>
+
+                <tr>
+                  <td>PSC1129</td>
+                  <td>Conflict Resolution</td>
+                  <td>Abshir Abdulle Amei</td>
+                </tr>
+
+                <tr>
+                  <td>WEB2101</td>
+                  <td>Introduction to Web Design</td>
+                  <td>Mohamed Ahmed Ghazali</td>
+                </tr>
+                <tr>
+                  <td>SLM1101</td>
+                  <td>Islamic Studies I</td>
+                  <td>Dr-Abdulahi Hussein Shariif</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="bottom-text">
+              <div class="text"><p>Showing 1 to 5 of 5 entries</p></div>
+              <div class="bottom-btn">
+                <ul class="btm-list">
+                  <li class="btm-list-item"><a href="#">« </a></li>
+                  <li class="btm-list-item">
+                    <a href="#" class="btm-fill">1</a>
+                  </li>
+                  <li class="btm-list-item"><a href="#">»</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer>
+          <a href="#">OCMS &copy;2017 - 2024 | SIMAD UNIVERSITY</a>
+          <a href="#" class="left-mr"
+            ><ion-icon name="globe-outline" class="footer-icn"></ion-icon
+            >SIMAD.EDU.SO</a
+          >
+          <a href="#"
+            ><ion-icon name="mail-outline" class="footer-icn"></ion-icon>
+            INFO@SIMAD.EDU.SO</a
+          >
+        </footer>
+      </div>
+    </div>
+
+    <!-- ionic icon link -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
