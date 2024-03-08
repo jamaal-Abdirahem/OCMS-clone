@@ -28,7 +28,7 @@ This project is a clone of our university's Online Course Management System (OCM
 
 **Deployment:**
 
-This project is deployed on GitHub Pages for easy access and demonstration. You can view the live demo [here](#https://ocms-clone.netlify.app/).
+This project is deployed on GitHub Pages for easy access and demonstration. You can view the live demo  <a href="https://ocms-clone.netlify.app/">here</a>.
 
 **How to Contribute:**
 
